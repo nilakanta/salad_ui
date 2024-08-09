@@ -75,7 +75,7 @@ defmodule SaladUI.CardTest do
 
       assert html =~ "Card footer"
 
-      for class <- ~w(flex items-center justify-between p-6 pt-0) do
+      for class <- ~w(flex p-6 pt-0 items-center) do
         assert html =~ class
       end
     end

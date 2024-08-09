@@ -29,7 +29,7 @@ defmodule SaladUI.HoverCardTest do
         |> clean_string()
 
       assert html =~
-               "<div data-side=\"top\" class=\"absolute hidden p-4 mb-2 rounded-md bg-popover text-popover-foreground outline-none shadow-md z-50 left-1/2 bottom-full w-64 -translate-x-1/2 animate-in border data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 fade-in-0 group-hover/hover-card:block slide-in-from-left-1/2 zoom-in-95\">Hover Card Content</div>"
+               "<div data-side=\"top\" class=\"absolute hidden p-4 mb-2 rounded-md bg-popover text-popover-foreground outline-none shadow-md z-50 left-1/2 bottom-full w-64 -translate-x-1/2 border data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=closed]:zoom-out-95 data-[state=open]:animate-in data-[state=open]:fade-in-0 data-[state=open]:zoom-in-95 group-hover/hover-card:block slide-in-from-left-1/2\">Hover Card Content</div>"
     end
 
     test "It renders hover_card_content bottom correctly" do
@@ -43,7 +43,7 @@ defmodule SaladUI.HoverCardTest do
         |> clean_string()
 
       assert html =~
-               "<div data-side=\"bottom\" class=\"absolute hidden p-4 mt-2 rounded-md bg-popover text-popover-foreground outline-none shadow-md z-50 left-1/2 top-full w-64 -translate-x-1/2 animate-in border data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 fade-in-0 group-hover/hover-card:block slide-in-from-left-1/2 zoom-in-95\">Hover Card Content</div>"
+               "<div data-side=\"bottom\" class=\"absolute hidden p-4 mt-2 rounded-md bg-popover text-popover-foreground outline-none shadow-md z-50 left-1/2 top-full w-64 -translate-x-1/2 border data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=closed]:zoom-out-95 data-[state=open]:animate-in data-[state=open]:fade-in-0 data-[state=open]:zoom-in-95 group-hover/hover-card:block slide-in-from-left-1/2\">Hover Card Content</div>"
     end
 
     test "It renders hover_card_content right correctly" do
@@ -57,7 +57,7 @@ defmodule SaladUI.HoverCardTest do
         |> clean_string()
 
       assert html =~
-               "<div data-side=\"right\" class=\"absolute hidden p-4 ml-2 rounded-md bg-popover text-popover-foreground outline-none shadow-md z-50 left-full top-1/2 w-64 -translate-y-1/2 animate-in border data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 fade-in-0 group-hover/hover-card:block slide-in-from-top-1/2 zoom-in-95\">Hover Card Content</div>"
+               "<div data-side=\"right\" class=\"absolute hidden p-4 ml-2 rounded-md bg-popover text-popover-foreground outline-none shadow-md z-50 left-full top-1/2 w-64 -translate-y-1/2 border data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=closed]:zoom-out-95 data-[state=open]:animate-in data-[state=open]:fade-in-0 data-[state=open]:zoom-in-95 group-hover/hover-card:block slide-in-from-top-1/2\">Hover Card Content</div>"
     end
 
     test "It renders hover_card correctly" do
@@ -81,7 +81,7 @@ defmodule SaladUI.HoverCardTest do
         |> clean_string()
 
       assert html =~
-               "<div class=\"relative inline-block group/hover-card\"><div class=\"\"><button class=\"inline-flex px-4 py-2 rounded-md text-primary transition-colors whitespace-nowrap items-center justify-center font-medium underline-offset-4 text-sm h-9 hover:underline focus-visible:ring-ring focus-visible:outline-none focus-visible:ring-1 disabled:pointer-events-none disabled:opacity-50\">@salad_ui</button></div><div data-side=\"top\" class=\"absolute hidden p-4 mb-2 rounded-md bg-popover text-popover-foreground outline-none shadow-md z-50 left-1/2 bottom-full w-64 -translate-x-1/2 animate-in border data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 fade-in-0 group-hover/hover-card:block slide-in-from-left-1/2 zoom-in-95\">Hover card content</div></div>"
+               "<div class=\"relative inline-block group/hover-card\"><div class=\"\"><button class=\"inline-flex px-4 py-2 rounded-md ring-offset-background text-primary transition-colors whitespace-nowrap items-center justify-center font-medium underline-offset-4 text-sm h-10 hover:underline disabled:pointer-events-none disabled:opacity-50 focus-visible:ring-ring focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2\">@salad_ui</button></div><div data-side=\"top\" class=\"absolute hidden p-4 mb-2 rounded-md bg-popover text-popover-foreground outline-none shadow-md z-50 left-1/2 bottom-full w-64 -translate-x-1/2 border data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=closed]:zoom-out-95 data-[state=open]:animate-in data-[state=open]:fade-in-0 data-[state=open]:zoom-in-95 group-hover/hover-card:block slide-in-from-left-1/2\">Hover card content</div></div>"
     end
   end
 end

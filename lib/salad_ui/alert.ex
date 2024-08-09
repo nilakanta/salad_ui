@@ -25,7 +25,7 @@ defmodule SaladUI.Alert do
     <div
       class={
         classes([
-          "relative w-full rounded-lg border p-4 [&>span~*]:pl-7 [&>span+div]:translate-y-[-3px] [&>span]:absolute [&>span]:left-4 [&>span]:top-4",
+          "relative w-full rounded-lg border p-4 [&>svg~*]:pl-7 [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-foreground",
           @variant_class,
           @class
         ])
@@ -86,7 +86,7 @@ defmodule SaladUI.Alert do
   @variants %{
     variant: %{
       "default" => "bg-background text-foreground",
-      "destructive" => "border-destructive/50 text-destructive dark:border-destructive [&>span]:text-destructive"
+      "destructive" => "border-destructive/50 text-destructive dark:border-destructive [&>svg]:text-destructive"
     }
   }
 
